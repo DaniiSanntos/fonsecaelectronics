@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Electrónica Fonseca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ima/icons8_dj_48px.png" type="image/x-icon">
+
+        <!-- Fuentes de Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet"> -->
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- <link href="css/all.css" rel="stylesheet"> -->
+
+        <!-- JQuery, SweetAlert 2 & Fontawesome-->
+        <!-- <script type="text/javascript" src="views/scripts/jquery-3.4.1.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="https://kit.fontawesome.com/088ef51476.js" crossorigin="anonymous"></script>
+    </head>
+        
+    <body>
+        <div class="main-container" id="main-container">
+            <header class="header" id="header">
+                <div class="encabezado">
+                    <div class="img-logo"><img src="img/LogoEF1.jpeg" alt="Logo EF"></div>
+                    <h1 class="logo">Electrónica Fonseca</h1>
+                    <div class="search" id="div-search">
+                        <input class="search__form__input" type="text" name="search" id="search" placeholder="Busca productos, marcas, etc." required>
+                        <button type="submit" class="search__form__button" id="btn-search"><i id="icon-search" class="fas fa-search"></i></button>
+                        <div id="buscando"></div>
+                    </div>
+                </div>
+            
+                <nav class="navegacion" id="navegacion">
+                    <ul class="nav-ul">
+                        <li id="nav-item1" title="Inicio" class="nav-items"><a class="module" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank"><i class="fas fa-home a-module"></i>Inicio</a></li>
+                        
+                        <li id="nav-item2" title="Productos" class="nav-items"><a href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank"><i class="fas fa-tags"></i>Productos</a></li>
+                        
+                        <li id="nav-item3" title="Categorías" class="nav-items"><a href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank"><i class="fas fa-cubes"></i>Categorías</a></li>
+                        
+                        <li id="nav-item4" title="Marcas" class="nav-items"><a href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank"><i class="fas fa-copyright"></i>Marcas</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="adjust" id="adjust">
+                    <span class="span-user-log">Hola, Regístrate o Inicia Sesion</span>
+                    <button class="button-adjust" id="button-adjust"><i class="fas fa-user"></i>
+                        <div class="panel-usuario" id="panel-usuario">
+                            <div class="mensaje">Bienvenido</div>
+                            <div class="line-user"></div>
+                            <a href="usuarioInicioSession" class="pU-actions">Iniciar Sesion</a>
+                            <a href="usuarioRegistrarse" class="pU-actions">Crear Cuenta</a>
+                            <a href="usuarioConfiguracion" class="pU-opciones">Configuración</a>
+                        </div>
+                    </button>
+                </div>
+            </header>
+            <section class="section" id="section">
+                <div class="contenedor-formulario">
+                    <div class="gridFichas">
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/9994.png" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Delux 1025</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$600.00</span>
+                                            <span class="ficha-price-pro">Stock: 14</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">INTERFACE SIN CONTROL PARA ILUMINACIÓN.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/4235.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Ghost 1500 RC</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$515.00</span>
+                                            <span class="ficha-price-pro">Stock: 10</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">Ghost 1500 RC es perfecta para crear un efecto de niebla lo suficientemente densa o ligera para resaltar los efectos de iluminación como láser y otros rayos de luz.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/1531.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Fire Ball</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$9720.00</span>
+                                            <span class="ficha-price-pro">Stock: 11</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">FIRE BALL despide una excelente iluminación gracias a sus luces dirigidas a 8 puntos distintos a la vez, aunado a su movimiento rotatorio, crea diversos efectos.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/164.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Fazer 900</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$1200.00</span>
+                                            <span class="ficha-price-pro">Stock: 6</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">La FAZER 900 es una máquina de Hazer de uso profesional.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/4360.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Shade 900</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$3600.00</span>
+                                            <span class="ficha-price-pro">Stock: 2</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">CON 316 LEDS ÁMBAR QUE ENCIENDEN AL DISPARAR EL HUMO.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/4963.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Led Beam 120</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$6000.00</span>
+                                            <span class="ficha-price-pro">Stock: 36</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">Led Beam 120 es una nueva cabeza móvil inteligente, compacta y elegante, puede operarse vía control DMX, manualmente o automática - mente con programas pregrabados, contiene elementos que te ayuda - rán a crear ambientes increíbles y dinámicos.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/6058.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Led Spot 60</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$6000.00</span>
+                                            <span class="ficha-price-pro">Stock: 28</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">Excelente cabeza móvil spot, que adopta las características de 2 ruedas de gobos, enfoque y prisma rotatorio de 3 caras como el spot tradicional pero ahora con lámpara LED de 60W.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div>
+                            <a style="text-decoration: none; color: currentcolor" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">
+                                <div class="fichas">
+                                    <div class="imagen">
+                                        <img class="i-p-img" src="img/9527.jpg" alt="productView" loading="lazy" >
+                                    </div>
+                                    <div class="info">
+                                        <span class="ficha-name-pro">Halo</span>
+                                        <div>
+                                            <span class="ficha-price-pro">$5000.00</span>
+                                            <span class="ficha-price-pro">Stock: 4</span>
+                                        </div>
+                                        <span class="ficha-detail-pro">HALO tiene 19 leds de 10W ultra brillantes RGBW 4 en 1, cuenta con dos secciones de LEDS, funciona como wash de excelente potencia o como un potente beam.</span>
+                                        <div class="acciones">
+                                        <a class="ver-mas" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="group-footer">
+                    <div class="f-item-s">
+                        <h6 class="ef">Acerca de Nosotros</h6>
+                        <div class="f-item-cont">
+                            <p>
+                                Después de iniciar en 2014 con la introducción de interfaces para el manejo de la iluminación por DMX, Electrónica Fonseca ha desarrollado una fuerte relación con diversos proveedores tanto de iluminación DMX y audio siendo un distribuidor autorizado para venta de una serie de productos y accesorios brindando soluciones en el mundo del espectáculo.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="f-item-c">
+                        <h6 class="">Encuéntranos</h6>
+                        <div class="f-item-cont">
+                            <a class="f-i-cont-a" href="https://www.google.com/maps/place/Guillermo+Prieto+23,+Ampliacion+Independencia,+93610+Independencia,+Ver./@20.050983,-97.0499296,18z/data=!3m1!4b1!4m5!3m4!1s0x85db03ab2389e5bf:0x313505f051f37d6e!8m2!3d20.0509805!4d-97.0488353" target="_blank"><i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    Guillermo Prieto #23 col Independencia
+                                    Martínez de la Torre, Veracruz.
+                                    CP: 93610, México.
+                                </span>
+                            </a>
+                            <p class="f-i-cont-a" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank" target="_blank"><i class="fas fa-phone-alt"></i>
+                                <span>
+                                    2321531652
+                                </span>
+                            </p>
+                            <p class="f-i-cont-a" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank" target="_blank"><i class="fas fa-phone-alt"></i>
+                                <span>
+                                    2323229354
+                                </span>
+                            </p>
+                            <p class="f-i-cont-a" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank" target="_blank"><i class="fas fa-envelope"></i>
+                                <span>
+                                    iluminacionyaudiofonseca@gmail.com
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="f-item-e">
+                        <h6 class="">Síguenos en redes</h6>
+                        <div class="f-item-cont-sn">
+                            <a class="f-i-cont-a" href="https://twitter.com/liteFonseca/" target="_blank"><i class="fab fa-twitter"></i><span>@MiTweet</span></a>
+                            <a class="f-i-cont-a" href="https://es-la.facebook.com/fonsecailuminacion/" target="_blank"><i class="fab fa-facebook-square"></i><span>Lite Tek distribuidor autorizado fonseca</span></a>
+                            <a class="f-i-cont-a" href="https://www.instagram.com/electronica_fonseca/" target="_blank"><i class="fab fa-instagram"></i><span>@MiInsta</span></a>
+                            <a class="f-i-cont-a" href="https://www.youtube.com/channel/UCb5ZACjhHcfYAavRvfsYFJQ/" target="_blank"><i class="fab fa-youtube"></i><span>Lite Tek Distribuidor Electrónica Fonseca</span></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="f-item-p">© 2020 Electrónica Fonseca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+</html>
